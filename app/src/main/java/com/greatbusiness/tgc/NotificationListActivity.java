@@ -1,5 +1,10 @@
 package com.greatbusiness.tgc;
 
+import java.util.ArrayList;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -11,15 +16,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.airbrushking.services.adapter.NotificationArrayAdapter;
-import com.airbrushking.services.db.DbHelper;
-import com.airbrushking.services.model.PushMessage;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-
+import com.greatbusiness.tgc.adapter.NotificationArrayAdapter;
+import com.greatbusiness.tgc.db.DbHelper;
+import com.greatbusiness.tgc.model.PushMessage;
 
 public class NotificationListActivity extends Activity implements OnItemClickListener {
 

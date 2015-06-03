@@ -9,9 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.airbrushking.services.R;
-import com.airbrushking.services.db.DbHelper;
-import com.airbrushking.services.model.PushMessage;
+import com.greatbusiness.tgc.R;
+import com.greatbusiness.tgc.db.DbHelper;
+import com.greatbusiness.tgc.model.PushMessage;
 
 import java.util.List;
 

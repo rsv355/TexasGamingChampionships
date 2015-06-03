@@ -8,8 +8,8 @@ import android.util.Log;
 import android.view.Window;
 import android.widget.TextView;
 
-import com.airbrushking.services.db.DbHelper;
-import com.airbrushking.services.model.PushMessage;
+import com.greatbusiness.tgc.db.DbHelper;
+import com.greatbusiness.tgc.model.PushMessage;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.SaveCallback;

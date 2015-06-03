@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/padding_views_small"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/thiImage"
+        android:layout_width="@dimen/thi_image_width"
+        android:layout_height="@dimen/thi_image_height"
+        android:layout_marginTop="@dimen/padding_views_small"
+        android:layout_marginBottom="@dimen/padding_views_small"
+        android:gravity="center_horizontal" />
+    
+</LinearLayout>

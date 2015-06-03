@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip">
+    
+   
+    
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_alignParentLeft="true" 
+	    android:layout_centerInParent="true"
+	    android:orientation="vertical" > 
+	   
+        <TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textStyle="bold"
+		    android:maxLines="1"
+		    android:ellipsize="middle"
+		    android:id="@+id/tv_title"/>
+	   
+        
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    
+		    <TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Date: "
+			    android:id="@+id/tv_date"/>
+		    
+<!-- 		    <TextView -->
+<!-- 			    android:layout_width="wrap_content" -->
+<!-- 			    android:layout_height="wrap_content" -->
+<!-- 			    android:id="@+id/n_comments"/> -->
+		 </LinearLayout>  
+		 
+<!--         <LinearLayout -->
+<!-- 		    android:layout_width="match_parent" -->
+<!-- 		    android:layout_height="wrap_content" -->
+<!-- 		    android:orientation="horizontal"> -->
+		    
+<!-- 		    <TextView -->
+<!-- 			    android:layout_width="wrap_content" -->
+<!-- 			    android:layout_height="wrap_content" -->
+<!-- 			    android:text="Last Tapped:  " -->
+<!-- 			    android:id="@+id/tv_lastTapped"/> -->
+		    
+<!-- 		    <TextView -->
+<!-- 			    android:layout_width="wrap_content" -->
+<!-- 			    android:layout_height="wrap_content" -->
+<!-- 			    android:id="@+id/value_lastTapped"/> -->
+<!-- 		 </LinearLayout>   -->
+	</LinearLayout>
+	
+   
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+	    android:layout_centerInParent="true" 
+	    android:orientation="horizontal">
+	     
+	     <com.airbrushking.services.adapter.ListButton
+		    android:layout_width="40dip"
+		    android:layout_height="40dip"
+		    android:layout_marginRight="5dip"
+		    android:id="@+id/img_delete"
+		    android:background="@drawable/close"
+	    	/>
+	     
+   </LinearLayout>   
+  
+   
+</RelativeLayout>

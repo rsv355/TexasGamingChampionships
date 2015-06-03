@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebViewActivity" >
+    
+	<WebView 
+	    android:id="@+id/wvWeb"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+	
+	<ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+	
+    <TextView
+        android:id="@+id/tvProgressBar"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/padding_views_normal"
+        android:textSize="@dimen/text_size_normal"
+		android:gravity="center"
+		android:textColor="#a7a7a7"
+        android:text="@string/wv_loading_text" />
+    	
+	
+</RelativeLayout>

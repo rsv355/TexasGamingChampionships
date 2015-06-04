@@ -14,7 +14,7 @@
 	    android:padding="@dimen/padding_views_very_big"
 	    android:background="@color/White"
 	    android:adjustViewBounds="true"
-	    android:src="@drawable/company_logo" />
+	    android:src="@drawable/company_logo2" />
     	
 	<ScrollView
 	    android:layout_width="fill_parent"

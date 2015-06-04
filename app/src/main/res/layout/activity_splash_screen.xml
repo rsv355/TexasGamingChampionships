@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
     tools:context=".SplashScreenActivity" >
 
 	<ImageView
@@ -15,6 +16,6 @@
 	    android:layout_height="wrap_content"
 		android:layout_centerInParent="true"
 	    android:adjustViewBounds="true"
-	    android:src="@drawable/company_logo" />
+	    android:src="@drawable/company_logo2" />
 
 </RelativeLayout>

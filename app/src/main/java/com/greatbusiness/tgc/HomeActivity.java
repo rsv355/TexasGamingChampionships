@@ -6,6 +6,10 @@ import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 
 public class HomeActivity extends Activity {
@@ -59,6 +63,21 @@ public class HomeActivity extends Activity {
 		ivButton06.setOnClickListener(eClick);
 		ivButton07.setOnClickListener(eClick);
 		ivButton08.setOnClickListener(eClick);
+
+
+
+		final Animation animation = new AlphaAnimation(1, 0);
+		animation.setDuration(1000);
+		animation.setInterpolator(new LinearInterpolator());
+		animation.setRepeatCount(Animation.INFINITE);
+		animation.setRepeatMode(Animation.REVERSE);
+		ivButton05.startAnimation(animation);
+		ivButton08.startAnimation(animation);
+
+
+
+		Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
+		ivButton00.startAnimation(fadeInAnimation);
 	}
 	
     //-------------------------------------------------------------------

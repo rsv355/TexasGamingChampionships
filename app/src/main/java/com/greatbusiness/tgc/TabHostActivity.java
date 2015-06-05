@@ -68,7 +68,7 @@ public class TabHostActivity extends TabActivity {
 		Global.tabHost.setCurrentTab(2);
 		
 		//Set tabs color (first time)
-		mSetBackgroundColor(Global.tabHost);
+		//mSetBackgroundColor(Global.tabHost);
 		
 		//Set view tags
 		Global.tabHost.getTabWidget().getChildAt(0).setTag(getString(R.string.th_tab_1));
@@ -85,7 +85,7 @@ public class TabHostActivity extends TabActivity {
 		Global.tabHost.setCurrentTab(2);
 		
 		//Set tabs color (first time)
-		mSetBackgroundColor(Global.tabHost);
+		//mSetBackgroundColor(Global.tabHost);
 		
 	    //-------------------------------------------------------------------
 	    //
@@ -94,7 +94,7 @@ public class TabHostActivity extends TabActivity {
 			@Override
 	        public void onTabChanged(String arg0) {
 				//Set tab colors (when click in some tab)
-				mSetBackgroundColor(Global.tabHost);
+		//		mSetBackgroundColor(Global.tabHost);
 	        }
 	    });
 		
@@ -133,7 +133,7 @@ public class TabHostActivity extends TabActivity {
 	            		if (sClickedTabTag.equals(getString(R.string.th_tab_4))) 
 	            		{
 							Global.mShowLinkInWebView(Global.WEBSITE_S);
-	            			//Not handled
+							return true; //doesn't allow tab change
 	            		}
 	            		
 	            		if (sClickedTabTag.equals(getString(R.string.th_tab_5))) 
@@ -172,15 +172,19 @@ public class TabHostActivity extends TabActivity {
     //-------------------------------------------------------------------
     //
     //-------------------------------------------------------------------
-    private void mSetBackgroundColor(TabHost tabHost)
+  /*  private void mSetBackgroundColor(TabHost tabHost)
     {
-        for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++) 
+
+
+
+        for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++)
         {
         	tabHost.getTabWidget().getChildAt(i).setBackgroundColor(getResources().getColor(R.color.AirbrushKing));
         }
         
         tabHost.getTabWidget().getChildAt(tabHost.getCurrentTab()).setBackgroundColor(getResources().getColor(R.color.AirbrushKing));
-	}
+
+	}*/
     
     
 }

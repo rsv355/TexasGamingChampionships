@@ -14,22 +14,7 @@ import android.widget.ImageView;
 
 public class HomeActivity extends Activity {
 	
-    //-------------------------------------------------------------------
-    //
-    //-------------------------------------------------------------------
-    ImageView ivButton00;
-    ImageView ivButton01;
-    ImageView ivButton02;
-    ImageView ivButton03;
-    ImageView ivButton04;
-    ImageView ivButton05;
-    ImageView ivButton06;
-    ImageView ivButton07;
-    ImageView ivButton08;
-    
-    //-------------------------------------------------------------------
-    //
-    //-------------------------------------------------------------------	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -44,29 +29,11 @@ public class HomeActivity extends Activity {
 	    //-------------------------------------------------------------------
 	    //
 	    //-------------------------------------------------------------------	
-		ivButton00 = (ImageView) findViewById(R.id.ivButton00);
-		ivButton01 = (ImageView) findViewById(R.id.ivButton01);
-		ivButton02 = (ImageView) findViewById(R.id.ivButton02);
-		ivButton03 = (ImageView) findViewById(R.id.ivButton03);
-		ivButton04 = (ImageView) findViewById(R.id.ivButton04);
-		ivButton05 = (ImageView) findViewById(R.id.ivButton05);
-		ivButton06 = (ImageView) findViewById(R.id.ivButton06);
-		ivButton07 = (ImageView) findViewById(R.id.ivButton07);
-		ivButton08 = (ImageView) findViewById(R.id.ivButton08);
-	    
-		ivButton00.setOnClickListener(eClick);
-		ivButton01.setOnClickListener(eClick);
-		ivButton02.setOnClickListener(eClick);
-		ivButton03.setOnClickListener(eClick);
-		ivButton04.setOnClickListener(eClick);
-		ivButton05.setOnClickListener(eClick);
-		ivButton06.setOnClickListener(eClick);
-		ivButton07.setOnClickListener(eClick);
-		ivButton08.setOnClickListener(eClick);
 
 
 
-		final Animation animation = new AlphaAnimation(1, 0);
+
+		/*final Animation animation = new AlphaAnimation(1, 0);
 		animation.setDuration(1000);
 		animation.setInterpolator(new LinearInterpolator());
 		animation.setRepeatCount(Animation.INFINITE);
@@ -77,7 +44,7 @@ public class HomeActivity extends Activity {
 
 
 		Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
-		ivButton00.startAnimation(fadeInAnimation);
+		ivButton00.startAnimation(fadeInAnimation);*/
 	}
 	
     //-------------------------------------------------------------------
@@ -87,7 +54,7 @@ public class HomeActivity extends Activity {
 		public void onClick(View v) {
 			Global.WEBVIEW_OPEN_FROM_THIS_TAB = Global.tabHost.getCurrentTab();
 			
-			switch (v.getId())
+			/*switch (v.getId())
 			{
 				//----------
 				case R.id.ivButton00:
@@ -99,15 +66,7 @@ public class HomeActivity extends Activity {
 					Global.mShowLinkInWebView(Global.CUSTOM_AIRBRUSH);
 					break;
 					
-				//----------
-				case R.id.ivButton02:
-					Global.mShowLinkInWebView(Global.GRAPHIC_DESIGN);
-					break;
-					
-				//----------
-				case R.id.ivButton03:
-					Global.mShowLinkInWebView(Global.PHOTOGRAPHY);
-					break;
+
 					
 				//----------
 				case R.id.ivButton04:
@@ -133,7 +92,7 @@ public class HomeActivity extends Activity {
 				case R.id.ivButton08:
 					Global.mShowLinkInWebView(Global.WEBSITE_SERVICES);
 					break;
-			}
+			}*/
 		}
 	};
 }

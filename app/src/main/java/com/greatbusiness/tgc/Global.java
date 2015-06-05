@@ -32,6 +32,13 @@ public class Global {
 	public static final String WEBSITE_SERVICES = "http://airbrushking.net/services";
 	public static final String WEBSITE = "http://airbrushking.net";
 
+
+	public static final String WEBSITE_TICKET = "http://airbrushking.net/tournaments/events";
+	public static final String WEBSITE_SHOPPING = "http://www.tgcstore.club";
+	public static final String WEBSITE_S = "http://airbrushking.net/tournaments/sponsors";
+
+
+
 	public static final String SHARE_SHOP = "http://www.airbrushking.net/shop";
 	public static final String SHARE_GALLERY = "http://www.airbrushking.net/gallery";
 	public static final String SHARE_SERVICES = "http://www.airbrushking.net/services";

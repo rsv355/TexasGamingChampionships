@@ -115,13 +115,13 @@ public class TabHostActivity extends TabActivity {
 	            		
 	            		if (sClickedTabTag.equals(getString(R.string.th_tab_1))) 
 	            		{
-	            			Global.mDialPhoneNumber(TabHostActivity.this);
+							Global.mShowLinkInWebView(Global.WEBSITE_TICKET);
 	            			return true; //doesn't allow tab change
 	            		}
 	            		
 	            		if (sClickedTabTag.equals(getString(R.string.th_tab_2))) 
 	            		{
-	            			Global.mEmailUs(TabHostActivity.this);
+							Global.mShowLinkInWebView(Global.WEBSITE_SHOPPING);
 	            			return true; //doesn't allow tab change
 	            		}
 	            		
@@ -132,6 +132,7 @@ public class TabHostActivity extends TabActivity {
 	            		
 	            		if (sClickedTabTag.equals(getString(R.string.th_tab_4))) 
 	            		{
+							Global.mShowLinkInWebView(Global.WEBSITE_S);
 	            			//Not handled
 	            		}
 	            		

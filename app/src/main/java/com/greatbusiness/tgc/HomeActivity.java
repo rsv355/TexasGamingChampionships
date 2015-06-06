@@ -30,7 +30,13 @@ public class HomeActivity extends Activity {
 	    //
 	    //-------------------------------------------------------------------	
 
-
+		ImageView ivButtonhome = (ImageView)findViewById(R.id.ivButtonhome);
+		ivButtonhome.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Global.mShowLinkInWebView(Global.WEBSITE_MAIN);
+			}
+		});
 
 
 		/*final Animation animation = new AlphaAnimation(1, 0);

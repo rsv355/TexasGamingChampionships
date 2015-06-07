@@ -26,12 +26,16 @@
         android:theme="@style/AppTheme"
         android:name="com.greatbusiness.tgc.AirbrushkingApplication" >
         <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:name="com.greatbusiness.tgc.SplashScreenActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             >
         </activity>
         <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:name="com.greatbusiness.tgc.TabHostActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"

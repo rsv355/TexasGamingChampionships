@@ -13,7 +13,7 @@ public class SplashScreenActivity extends Activity {
     //------------------------------------------------------------------
     //
     //------------------------------------------------------------------
-    final int SPLASH_SCREEN_DURATION = 2000; //Milliseconds
+    final int SPLASH_SCREEN_DURATION = 1000; //Milliseconds
 
     //------------------------------------------------------------------
     //
@@ -22,9 +22,9 @@ public class SplashScreenActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+       //requestWindowFeature(Window.FEATURE_NO_TITLE);
+       // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		
 		setContentView(R.layout.activity_splash_screen);        
@@ -33,10 +33,10 @@ public class SplashScreenActivity extends Activity {
 	    //
 	    //-------------------------------------------------------------------
         new Handler().postDelayed(new Runnable(){
-            public void run(){       	
+            public void run(){
         	finish();
             };
-        }, SPLASH_SCREEN_DURATION);           
+        }, SPLASH_SCREEN_DURATION);
 	}
 	
 	//-------------------------------------------------------------------

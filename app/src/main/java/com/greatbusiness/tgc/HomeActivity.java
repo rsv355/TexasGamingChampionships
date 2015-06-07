@@ -39,15 +39,15 @@ public class HomeActivity extends Activity {
 		});
 
 
-		/*final Animation animation = new AlphaAnimation(1, 0);
+		final Animation animation = new AlphaAnimation(1, 0);
 		animation.setDuration(1000);
 		animation.setInterpolator(new LinearInterpolator());
 		animation.setRepeatCount(Animation.INFINITE);
 		animation.setRepeatMode(Animation.REVERSE);
-		ivButton05.startAnimation(animation);
-		ivButton08.startAnimation(animation);
+		ivButtonhome.startAnimation(animation);
 
 
+/*
 
 		Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
 		ivButton00.startAnimation(fadeInAnimation);*/

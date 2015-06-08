@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<color name="customGray">#B8B8B8</color>
+
 	<color name="AirbrushKing">#1C1C66</color>
 	<color name="White">#FFFFFF</color>
 	<color name="Ivory">#FFFFF0</color>

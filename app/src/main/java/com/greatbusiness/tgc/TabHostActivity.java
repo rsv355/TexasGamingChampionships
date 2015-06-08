@@ -3,6 +3,8 @@ package com.greatbusiness.tgc;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,7 +17,9 @@ import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
 
 public class TabHostActivity extends TabActivity {
-	
+	boolean tab1 = false;
+	boolean tab2 = false;
+	boolean tab3 = false;
     //-------------------------------------------------------------------
     //
     //-------------------------------------------------------------------
@@ -44,23 +48,23 @@ public class TabHostActivity extends TabActivity {
 		
 		//Add phone tab
 		String sPhone = getString(R.string.th_tab_1);
-		Global.tabHost.addTab(Global.tabHost.newTabSpec(sPhone).setContent(new Intent(this, HomeActivity.class)).setIndicator(mPrepareCustomTabView(R.drawable.img_tab_1_selector)));
+		Global.tabHost.addTab(Global.tabHost.newTabSpec(sPhone).setContent(new Intent(this, WebViewActivity.class)).setIndicator(mPrepareCustomTabView(R.drawable.img_tab_1_selector)));
 		//Add email tab
 		String sEmail = getString(R.string.th_tab_2);
-		Global.tabHost.addTab(Global.tabHost.newTabSpec(sEmail).setContent(new Intent(this, HomeActivity.class)).setIndicator(mPrepareCustomTabView(R.drawable.img_tab_2_selector)));
+		Global.tabHost.addTab(Global.tabHost.newTabSpec(sEmail).setContent(new Intent(this, WebViewActivity.class)).setIndicator(mPrepareCustomTabView(R.drawable.img_tab_2_selector)));
 		//Add home tab
 		String sHome = getString(R.string.th_tab_3);
 		Global.tabHost.addTab(Global.tabHost.newTabSpec(sHome).setContent(new Intent(this, HomeActivity.class)).setIndicator(mPrepareCustomTabView(R.drawable.img_tab_3_selector)));
 		//Add share tab
 		String sShare = getString(R.string.th_tab_4);
-		Global.tabHost.addTab(Global.tabHost.newTabSpec(sShare).setContent(new Intent(this, ShareActivity.class)).setIndicator(mPrepareCustomTabView(R.drawable.img_tab_4_selector)));
+		Global.tabHost.addTab(Global.tabHost.newTabSpec(sShare).setContent(new Intent(this, WebViewActivity.class)).setIndicator(mPrepareCustomTabView(R.drawable.img_tab_4_selector)));
 		//Add social tab		
 		String sSocial = getString(R.string.th_tab_5);
 		Global.tabHost.addTab(Global.tabHost.newTabSpec(sSocial).setContent(new Intent(this, SocialMediaActivity.class)).setIndicator(mPrepareCustomTabView(R.drawable.img_tab_5_selector)));
-		//Add web view tab 	
+		//Add web view tab
 		String sWebView = getString(R.string.th_tab_6);
 		Global.tabHost.addTab(Global.tabHost.newTabSpec(sWebView).setContent(new Intent(this, WebViewActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)).setIndicator(mPrepareCustomTabView(R.drawable.img_tab_5_selector)));
-	
+
 		//Hide the tabs dividers
 		Global.tabHost.getTabWidget().setDividerDrawable(null);
 	
@@ -115,14 +119,16 @@ public class TabHostActivity extends TabActivity {
 	            		
 	            		if (sClickedTabTag.equals(getString(R.string.th_tab_1))) 
 	            		{
+
 							Global.mShowLinkInWebView(Global.WEBSITE_TICKET);
-	            			return true; //doesn't allow tab change
+	            			//return true; //doesn't allow tab change
 	            		}
 	            		
 	            		if (sClickedTabTag.equals(getString(R.string.th_tab_2))) 
 	            		{
+
 							Global.mShowLinkInWebView(Global.WEBSITE_SHOPPING);
-	            			return true; //doesn't allow tab change
+	            			//return true; //doesn't allow tab change
 	            		}
 	            		
 	            		if (sClickedTabTag.equals(getString(R.string.th_tab_3))) 
@@ -132,16 +138,17 @@ public class TabHostActivity extends TabActivity {
 	            		
 	            		if (sClickedTabTag.equals(getString(R.string.th_tab_4))) 
 	            		{
+
 							Global.mShowLinkInWebView(Global.WEBSITE_S);
-							return true; //doesn't allow tab change
+							//return true; //doesn't allow tab change
 	            		}
 	            		
-	            		if (sClickedTabTag.equals(getString(R.string.th_tab_5))) 
+	            		if (sClickedTabTag.equals(getString(R.string.th_tab_5)))
 	            		{
 	            			//Not handled
 	            		}
-	            		
-	            		if (sClickedTabTag.equals(getString(R.string.th_tab_6))) 
+
+	            		if (sClickedTabTag.equals(getString(R.string.th_tab_6)))
 	            		{
 	            			//Not handled
 	            		}
@@ -163,9 +170,9 @@ public class TabHostActivity extends TabActivity {
     {
         View view = LayoutInflater.from(this).inflate(R.layout.tab_host_item, null);
         ImageView iv = (ImageView) view.findViewById(R.id.thiImage);
-        
+
         iv.setImageResource(iPicture);
-        
+
         return view;
 	}
     
@@ -174,16 +181,16 @@ public class TabHostActivity extends TabActivity {
     //-------------------------------------------------------------------
     private void mSetBackgroundColor(TabHost tabHost)
     {
+/*
 
 
-
-       /* for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++)
+        for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++)
         {
-        	tabHost.getTabWidget().getChildAt(i).setBackgroundColor(getResources().getColor(R.color.AirbrushKing));
+        	tabHost.getTabWidget().getChildAt(i).setBackgroundColor(getResources().getColor(R.color.White));
         }
         
-        tabHost.getTabWidget().getChildAt(tabHost.getCurrentTab()).setBackgroundColor(getResources().getColor(R.color.AirbrushKing));
-*/
+        tabHost.getTabWidget().getChildAt(tabHost.getCurrentTab()).setBackgroundColor(getResources().getColor(R.color.White));*/
+
 	}
     
     

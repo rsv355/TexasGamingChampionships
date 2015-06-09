@@ -35,7 +35,8 @@ public class ReceivedPushMessageActivity extends Activity {
 		
 		try {
 			JSONObject json = new JSONObject(getIntent().getExtras().getString("com.parse.Data"));
-			notificationTxt = json.getString("alert");
+			//notificationTxt = json.getString("alert");
+			notificationTxt = "ALert";
 			
 		} catch (JSONException exe) {
 			Log.e("AirBrush", "Error during extraction of Json data from push message.");

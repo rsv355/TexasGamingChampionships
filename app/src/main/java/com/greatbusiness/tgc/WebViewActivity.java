@@ -1,6 +1,7 @@
 package com.greatbusiness.tgc;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.media.AudioManager;
@@ -95,7 +96,7 @@ public class WebViewActivity extends Activity {
         }
         return super.onKeyDown(keyCode, event);
     }
-	
+
 	
 	//-------------------------------------------------------------------
     //
@@ -104,7 +105,11 @@ public class WebViewActivity extends Activity {
 	
 	@Override
 	public void onBackPressed() {
-		Global.tabHost.setCurrentTab(Global.WEBVIEW_OPEN_FROM_THIS_TAB);
+		//Global.tabHost.setCurrentTab(Global.WEBVIEW_OPEN_FROM_THIS_TAB);
+		Intent i = new Intent(WebViewActivity.this,TabHostActivity2.class);
+		i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		startActivity(i);
+		finish();
 	}	
 	
     //-------------------------------------------------------------------

@@ -3,8 +3,6 @@ package com.greatbusiness.tgc;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,9 +13,8 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
-import android.widget.Toast;
 
-public class TabHostActivity extends TabActivity {
+public class TabHostActivity2 extends TabActivity {
 	boolean tab1 = false;
 	boolean tab2 = false;
 	boolean tab3 = false;
@@ -38,10 +35,7 @@ public class TabHostActivity extends TabActivity {
 	    //-------------------------------------------------------------------
 	    //
 	    //-------------------------------------------------------------------	
-		//Show the splash screen
-		Intent iSplashScreen = new Intent(this, SplashScreenActivity.class);
-    	startActivity(iSplashScreen);
-		
+
 	    //-------------------------------------------------------------------
 	    //
 	    //-------------------------------------------------------------------

@@ -61,6 +61,14 @@
                 android:value="com.greatbusiness.tgc.HomeActivity" />
 
         </activity>
+
+        <activity
+            android:theme="@style/noAnimTheme"
+            android:name="com.greatbusiness.tgc.TabHostActivity2"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+
         <activity
             android:name="com.greatbusiness.tgc.SocialMediaActivity"
             android:configChanges="orientation|screenSize"
